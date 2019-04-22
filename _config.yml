@@ -97,8 +97,7 @@ backup:
   type: git
   theme: yilia
   repository:
-    # github: git@github.com:greathappyforest/greathappyforest.github.io.git,hexo
-    github: git@github.com:greathappyforest/blog.git,hexo
+    github: git@github.com:greathappyforest/greathappyforest.github.io.git,hexo
 
 sitemap:
   path: sitemap.xml
