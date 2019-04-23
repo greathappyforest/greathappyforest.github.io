@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//litten.me">
-  <title>leetcode 45 - Jump Game II | GHF</title>
+  <title>leetcode 101 - Symmetric Tree | GHF</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="45. Jump Game IIDifficulty: Hard Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at">
-<meta name="keywords" content="algorithms,interview_2019,greedy">
+  <meta name="description" content="101. Symmetric TreeDifficulty: Easy Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, this binary tree [1,2,2,3,4,4,3] is symmetric: 12345">
+<meta name="keywords" content="algorithms,interview_2019,bst">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode 45 - Jump Game II">
-<meta property="og:url" content="//litten.me/2019/04/21/45/index.html">
+<meta property="og:title" content="leetcode 101 - Symmetric Tree">
+<meta property="og:url" content="//litten.me/2019/04/22/101/index.html">
 <meta property="og:site_name" content="GHF">
-<meta property="og:description" content="45. Jump Game IIDifficulty: Hard Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at">
+<meta property="og:description" content="101. Symmetric TreeDifficulty: Easy Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, this binary tree [1,2,2,3,4,4,3] is symmetric: 12345">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-22T04:06:29.048Z">
+<meta property="og:updated_time" content="2019-04-23T04:00:47.637Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode 45 - Jump Game II">
-<meta name="twitter:description" content="45. Jump Game IIDifficulty: Hard Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at">
+<meta name="twitter:title" content="leetcode 101 - Symmetric Tree">
+<meta name="twitter:description" content="101. Symmetric TreeDifficulty: Easy Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center). For example, this binary tree [1,2,2,3,4,4,3] is symmetric: 12345">
   
     <link rel="alternative" href="/atom.xml" title="GHF" type="application/atom+xml">
   
@@ -177,36 +177,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="leetcode-45" class="article article-type-leetcode " itemscope itemprop="blogPost">
+            <article id="leetcode-101" class="article article-type-leetcode " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      leetcode 45 - Jump Game II
+      leetcode 101 - Symmetric Tree
     </h1>
   
 
         
-        <a href="/2019/04/21/45/" class="archive-article-date">
-  	<time datetime="2019-04-22T04:05:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-21</time>
+        <a href="/2019/04/22/101/" class="archive-article-date">
+  	<time datetime="2019-04-23T03:59:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="45-Jump-Game-II"><a href="#45-Jump-Game-II" class="headerlink" title="45. Jump Game II"></a><a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener">45. Jump Game II</a></h3><p>Difficulty: <strong>Hard</strong></p>
-<p>Given an array of non-negative integers, you are initially positioned at the first index of the array.</p>
-<p>Each element in the array represents your maximum jump length at that position.</p>
-<p>Your goal is to reach the last index in the minimum number of jumps.</p>
-<p><strong>Example:</strong></p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Inpu<span class="variable">t:</span> [<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">4</span>]</span><br><span class="line">Outpu<span class="variable">t:</span> <span class="number">2</span></span><br><span class="line">Explanation: The minimum <span class="keyword">number</span> of <span class="keyword">jumps</span> <span class="keyword">to</span> reach the <span class="keyword">last</span> <span class="built_in">index</span> <span class="keyword">is</span> <span class="number">2</span>.</span><br><span class="line">    Jump <span class="number">1</span> step from <span class="built_in">index</span> <span class="number">0</span> <span class="keyword">to</span> <span class="number">1</span>, then <span class="number">3</span> steps <span class="keyword">to</span> the <span class="keyword">last</span> <span class="built_in">index</span>.</span><br></pre></td></tr></table></figure>
-<p><strong>Note:</strong></p>
-<p>You can assume that you can always reach the last index.</p>
+        <h3 id="101-Symmetric-Tree"><a href="#101-Symmetric-Tree" class="headerlink" title="101. Symmetric Tree"></a><a href="https://leetcode.com/problems/symmetric-tree/" target="_blank" rel="noopener">101. Symmetric Tree</a></h3><p>Difficulty: <strong>Easy</strong></p>
+<p>Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).</p>
+<p>For example, this binary tree <code>[1,2,2,3,4,4,3]</code> is symmetric:</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    <span class="number">1</span></span><br><span class="line">   / \</span><br><span class="line">  <span class="number">2</span>   <span class="number">2</span></span><br><span class="line"> / \ / \</span><br><span class="line"><span class="number">3</span>  <span class="number">4</span> <span class="number">4</span>  <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>But the following <code>[1,2,2,null,3,null,3]</code> is not:  </p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  <span class="number">1</span></span><br><span class="line"> / \</span><br><span class="line"><span class="number">2</span>   <span class="number">2</span></span><br><span class="line"> \   \</span><br><span class="line"> <span class="number">3</span>    <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p><strong>Note:</strong><br>Bonus points if you could solve it both recursively and iteratively.</p>
 <h4 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h4><p>Language: <strong>Java</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">int</span> jumps = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> curEnd = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;nums.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">            max = Math.max(max, i + nums[i]);</span><br><span class="line">            <span class="keyword">if</span> (i == curEnd) &#123;</span><br><span class="line">                jumps++;</span><br><span class="line">                curEnd = max;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jumps;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for a binary tree node.</span></span><br><span class="line"><span class="comment"> * public class TreeNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     TreeNode left;</span></span><br><span class="line"><span class="comment"> *     TreeNode right;</span></span><br><span class="line"><span class="comment"> *     TreeNode(int x) &#123; val = x; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isSymmetric</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root ==<span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">return</span> helper(root.left,root.right);</span><br><span class="line">    &#125;</span><br><span class="line">​</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">helper</span><span class="params">(TreeNode left, TreeNode right)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(left == <span class="keyword">null</span> &amp;&amp; right == <span class="keyword">null</span>)    <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span>(left == <span class="keyword">null</span> || right == <span class="keyword">null</span>)    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">return</span> (left.val==right.val) &amp;&amp; helper(left.left,right.right) &amp;&amp; helper(left.right,right.left);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -253,7 +252,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">greedy</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bst</a>
         		</li>
       		
 		</ul>
@@ -320,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://litten.me/2019/04/21/45/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://litten.me/2019/04/22/101/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -334,18 +333,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/21/48/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          leetcode 48 - Rotate Image
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/04/21/42/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">leetcode 42 - Trapping Rain Water</div>
+    <a href="/2019/04/21/59/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">leetcode 59 - Spiral Matrix II</div>
       <i class="icon-circle-right"></i>
     </a>
   
