@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="GHF">
 <meta property="og:description" content="45. Jump Game IIDifficulty: Hard Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-22T04:06:29.048Z">
+<meta property="og:updated_time" content="2019-04-24T07:16:32.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode 45 - Jump Game II">
 <meta name="twitter:description" content="45. Jump Game IIDifficulty: Hard Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at">
@@ -207,6 +207,7 @@
 <p>You can assume that you can always reach the last index.</p>
 <h4 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h4><p>Language: <strong>Java</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">jump</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">int</span> jumps = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> curEnd = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;nums.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">            max = Math.max(max, i + nums[i]);</span><br><span class="line">            <span class="keyword">if</span> (i == curEnd) &#123;</span><br><span class="line">                jumps++;</span><br><span class="line">                curEnd = max;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> jumps;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -503,11 +504,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">bst</a>
+                <a href="javascript:void(0)" class="js-tag color5">tree</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">divide and conquer</a>
+                <a href="javascript:void(0)" class="js-tag color4">Binary Search</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -516,6 +517,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">combination</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">divide and conquer</a>
               </li>
              
               <li class="article-tag-list-item">
